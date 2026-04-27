@@ -9,10 +9,9 @@ function verProductos(){
   mensaje.textContent = product + " agregado al carrito 🛒";
   document.body.appendChild(mensaje);
 }*/
-function agregarCarrito(product) {
-  alert(product + " agregado al carrito 🛒");
+function agregarCarrito(producto) {
+  let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+  carrito.push(producto);
+  localStorage.setItem("carrito", JSON.stringify(carrito));
 }
 
-function irAlCarrito() {
-  window.location.href = "Carrito.html";
-}
