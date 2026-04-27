@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  color: white;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* PRODUCTOS */
+.productos {
+  padding: 40px;
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+/*
+.hero {
+  height: 80vh;
+  background: url('https://via.placeholder.com/1200') center/cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}*/
