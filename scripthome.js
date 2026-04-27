@@ -12,3 +12,7 @@ function verProductos(){
 function agregarCarrito(product) {
   alert(product + " agregado al carrito 🛒");
 }
+
+function irAlCarrito() {
+  window.location.href = "Carrito.html";
+}

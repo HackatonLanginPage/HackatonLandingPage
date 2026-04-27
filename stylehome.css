@@ -31,11 +31,24 @@ body {
   margin: 20px;
   padding: 20px;
   border: 1px solid #ddd;
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
-  transform: scale(1.1);
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.hero {
+  height: 90vh;
+
+  background: linear-gradient(
+      rgba(0,0,0,0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url('Imagenes_home/Fans.webp') center/cover no-repeat;
+
+  color: white;
 }
 /*
 .hero {
