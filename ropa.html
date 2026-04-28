@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ropa Deportiva</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+<h1>ROPA DEPORTIVA</h1>
+
+<nav>
+<button class="carrito">
+🛒 <span id="contador">0</span>
+</button>
+</nav>
+</header>
+
+
+<section class="filtros">
+<button onclick="mostrarCategoria('todo')">Todo</button>
+<button onclick="mostrarCategoria('hombre')">Hombre</button>
+<button onclick="mostrarCategoria('mujer')">Mujer</button>
+</section>
+
+
+<!-- HOMBRE -->
+<section class="categoria hombre">
+
+<h2>ROPA PARA HOMBRE</h2>
+
+<div class="catalogo">
+
+<div class="producto">
+<img src="img/playeram.avif">
+<p class="marca">NIKE</p>
+<h3>Playera deportiva</h3>
+<p class="precio">$799.00</p>
+<button onclick="agregarCarrito()">Agregar al carrito</button>
+</div>
+
+
+<div class="producto">
+<img src="img/sudaderam.webp">
+<p class="marca">PUMA</p>
+<h3>Sudadera deportiva</h3>
+<p class="precio">$1,299.00</p>
+<button onclick="agregarCarrito()">Agregar al carrito</button>
+</div>
+
+
+<div class="producto">
+<img src="img/pantsm.jpg">
+<p class="marca">ADIDAS</p>
+<h3>Pants deportivo</h3>
+<p class="precio">$999.00</p>
+<button onclick="agregarCarrito()">Agregar al carrito</button>
+</div>
+
+
+<div class="producto">
+<img src="img/shortm.jpg">
+<p class="marca">UNDER ARMOUR</p>
+<h3>Short deportivo</h3>
+<p class="precio">$650.00</p>
+<button onclick="agregarCarrito()">Agregar al carrito</button>
+</div>
+
+
+<div class="producto">
+<img src="img/chamarram.jpg">
+<p class="marca">NEW BALANCE</p>
+<h3>Chamarra deportiva</h3>
+<p class="precio">$1,599.00</p>
+<button onclick="agregarCarrito()">Agregar al carrito</button>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- MUJER -->
+<section class="categoria mujer">
+
+<h2>ROPA PARA MUJER</h2>
+
+<div class="catalogo">
+
+<div class="producto">
+<img src="img/toph.jpg">
+<p class="marca">ADIDAS</p>
+<h3>Top deportivo</h3>
+<p class="precio">$550.00</p>
+<button onclick="agregarCarrito()">Agregar al carrito</button>
+</div>
+
+
+<div class="producto">
+<img src="img/leggingsh.jpg">
+<p class="marca">ADIDAS</p>
+<h3>Leggings deportivos</h3>
+<p class="precio">$899.00</p>
+<button onclick="agregarCarrito()">Agregar al carrito</button>
+</div>
+
+
+<div class="producto">
+<img src="img/sudaderah.webp">
+<p class="marca">PUMA</p>
+<h3>Sudadera deportiva</h3>
+<p class="precio">$1,199.00</p>
+<button onclick="agregarCarrito()">Agregar al carrito</button>
+</div>
+
+
+<div class="producto">
+<img src="img/shorth.jpg">
+<p class="marca">UNDER ARMOUR</p>
+<h3>Short deportivo</h3>
+<p class="precio">$699.00</p>
+<button onclick="agregarCarrito()">Agregar al carrito</button>
+</div>
+
+
+<div class="producto">
+<img src="img/conjuntoh.jpg">
+<p class="marca">NEW BALANCE</p>
+<h3>Conjunto deportivo</h3>
+<p class="precio">$1,499.00</p>
+<button onclick="agregarCarrito()">Agregar al carrito</button>
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+<p>© 2026 Ropa Deportiva</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
