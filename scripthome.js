@@ -9,9 +9,12 @@ function verProductos(){
   mensaje.textContent = product + " agregado al carrito 🛒";
   document.body.appendChild(mensaje);
 }*/
-function agregarCarrito(producto) {
+function agregarCarrito(nombre, precio, imagen) {
   let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-  carrito.push(producto);
+  carrito.push({
+    nombre: nombre,
+    precio: precio,
+    imagen: imagen
+  });
   localStorage.setItem("carrito", JSON.stringify(carrito));
 }
-
