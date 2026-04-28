@@ -4,32 +4,68 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ropa Deportiva</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="stylehome.css">
 <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
 
-<header>
-<h1>ROPA DEPORTIVA</h1>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<div class="container">
 
-<nav>
-<button class="carrito">
-🛒 <span id="contador">0</span>
+<a class="navbar-brand" href="#">Tienda de Deportes</a>
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
 </button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+<li class="nav-item">
+<a class="nav-link" href="Home.html">Inicio</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="ropa.html">Ropa</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="calzado.html">Calzado</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="deportes.html">Deportes</a>
+</li>
+</ul>
+
+<button class="btn btn-danger" onclick="agregarCarrito()">🛒</button>
+
+</div>
+</div>
 </nav>
-</header>
 
 
-<section class="filtros">
-<button onclick="mostrarCategoria('todo')">Todo</button>
-<button onclick="mostrarCategoria('hombre')">Hombre</button>
-<button onclick="mostrarCategoria('mujer')">Mujer</button>
-</section>
+<div class="container my-5">
+
+<h1 class="text-center mb-5 main-title">
+ROPA DEPORTIVA
+</h1>
 
 
-<!-- HOMBRE -->
-<section class="categoria hombre">
 
-<h2>ROPA PARA HOMBRE</h2>
+<section class="categoria">
+
+<h3 class="category-title">
+ROPA PARA HOMBRE
+</h3>
 
 <div class="catalogo">
 
@@ -38,7 +74,7 @@
 <p class="marca">NIKE</p>
 <h3>Playera deportiva</h3>
 <p class="precio">$799.00</p>
-<button onclick="agregarCarrito()">Agregar al carrito</button>
+<button onclick="agregarCarrito()">AGREGAR</button>
 </div>
 
 
@@ -47,7 +83,7 @@
 <p class="marca">PUMA</p>
 <h3>Sudadera deportiva</h3>
 <p class="precio">$1,299.00</p>
-<button onclick="agregarCarrito()">Agregar al carrito</button>
+<button onclick="agregarCarrito()">AGREGAR</button>
 </div>
 
 
@@ -56,7 +92,7 @@
 <p class="marca">ADIDAS</p>
 <h3>Pants deportivo</h3>
 <p class="precio">$999.00</p>
-<button onclick="agregarCarrito()">Agregar al carrito</button>
+<button onclick="agregarCarrito()">AGREGAR</button>
 </div>
 
 
@@ -65,7 +101,7 @@
 <p class="marca">UNDER ARMOUR</p>
 <h3>Short deportivo</h3>
 <p class="precio">$650.00</p>
-<button onclick="agregarCarrito()">Agregar al carrito</button>
+<button onclick="agregarCarrito()">AGREGAR</button>
 </div>
 
 
@@ -74,19 +110,19 @@
 <p class="marca">NEW BALANCE</p>
 <h3>Chamarra deportiva</h3>
 <p class="precio">$1,599.00</p>
-<button onclick="agregarCarrito()">Agregar al carrito</button>
+<button onclick="agregarCarrito()">AGREGAR</button>
 </div>
 
 </div>
-
 </section>
 
 
 
-<!-- MUJER -->
-<section class="categoria mujer">
+<section class="categoria">
 
-<h2>ROPA PARA MUJER</h2>
+<h3 class="category-title">
+ROPA PARA MUJER
+</h3>
 
 <div class="catalogo">
 
@@ -95,7 +131,7 @@
 <p class="marca">ADIDAS</p>
 <h3>Top deportivo</h3>
 <p class="precio">$550.00</p>
-<button onclick="agregarCarrito()">Agregar al carrito</button>
+<button onclick="agregarCarrito()">AGREGAR</button>
 </div>
 
 
@@ -104,7 +140,7 @@
 <p class="marca">ADIDAS</p>
 <h3>Leggings deportivos</h3>
 <p class="precio">$899.00</p>
-<button onclick="agregarCarrito()">Agregar al carrito</button>
+<button onclick="agregarCarrito()">AGREGAR</button>
 </div>
 
 
@@ -113,7 +149,7 @@
 <p class="marca">PUMA</p>
 <h3>Sudadera deportiva</h3>
 <p class="precio">$1,199.00</p>
-<button onclick="agregarCarrito()">Agregar al carrito</button>
+<button onclick="agregarCarrito()">AGREGAR</button>
 </div>
 
 
@@ -122,7 +158,7 @@
 <p class="marca">UNDER ARMOUR</p>
 <h3>Short deportivo</h3>
 <p class="precio">$699.00</p>
-<button onclick="agregarCarrito()">Agregar al carrito</button>
+<button onclick="agregarCarrito()">AGREGAR</button>
 </div>
 
 
@@ -131,17 +167,20 @@
 <p class="marca">NEW BALANCE</p>
 <h3>Conjunto deportivo</h3>
 <p class="precio">$1,499.00</p>
-<button onclick="agregarCarrito()">Agregar al carrito</button>
+<button onclick="agregarCarrito()">AGREGAR</button>
 </div>
 
 </div>
-
 </section>
+
+</div>
 
 
 <footer>
 <p>© 2026 Ropa Deportiva</p>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 <script src="script.js"></script>
 
