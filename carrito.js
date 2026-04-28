@@ -43,3 +43,8 @@ function confirmarCompra() {
   // Opcional: refrescar la vista
   location.reload();
 }
+
+function vaciarCarrito() {
+  localStorage.removeItem("carrito");
+  location.reload();
+}
