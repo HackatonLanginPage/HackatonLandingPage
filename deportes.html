@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Deportivo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="deportes.css">
+</head>
+<body>
+
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Tienda de Deportes</a>
+            
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Home.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Ropa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="calzado.html">Calzado</a></li>
+                    <li class="nav-item"><a class="nav-link" href="deportes.html">Deportes</a></li>
+                </ul>
+                <button class="btn btn-danger" onclick="irAlCarrito()">🛒</button>
+            </div>
+        </div>
+    </nav>
+
+<div class="container my-5">
+    <h1 class="text-center mb-5 main-title">ARTÍCULOS DEPORTIVOS</h1>
+
+    <h3 class="category-title">DEPORTES DE PELOTA</h3>
+    <div class="row mb-5">
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100 product-card text-center">
+                <div class="img-box"><img src="pictures/pelotafutbol.jpg"></div>
+                <div class="card-body d-flex flex-column">
+                    <p class="brand">ADIDAS</p>
+                    <p class="description">Balón de fútbol profesional</p>
+                    <p class="price">$749.00</p>
+                    <button class="btn btn-add-cart mt-auto" onclick="agregarCarrito('Balón de fútbol profesional' , 749.00,'pictures/pelotafutbol.jpg')">AGREGAR</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100 product-card text-center">
+                <div class="img-box"><img src="pictures/pelotabasket.jpg"></div>
+                <div class="card-body d-flex flex-column">
+                    <p class="brand">SPALDING</p>
+                    <p class="description">Balón de básquetbol oficial</p>
+                    <p class="price">$550.00</p>
+                    <button class="btn btn-add-cart mt-auto" onclick="agregarCarrito('Balón de básquetbol oficial' , 550.00,'pictures/pelotabasket.jpg')">AGREGAR</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100 product-card text-center">
+                <div class="img-box"><img src="pictures/pingpong.webp"></div>
+                <div class="card-body d-flex flex-column">
+                    <p class="brand">STIGA</p>
+                    <p class="description">Set de ping pong</p>
+                    <p class="price">$350.00</p>
+                    <button class="btn btn-add-cart mt-auto" onclick="agregarCarrito('Set de ping pong' , 350.00,'pictures/pingpong.webp')">AGREGAR</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100 product-card text-center">
+                <div class="img-box"><img src="pictures/raqueta.webp"></div>
+                <div class="card-body d-flex flex-column">
+                    <p class="brand">WILSON</p>
+                    <p class="description">Raqueta de alto rendimiento</p>
+                    <p class="price">$1,450.00</p>
+                    <button class="btn btn-add-cart mt-auto" onclick="agregarCarrito('Raqueta de alto rendimiento' , 1450.00,'pictures/raqueta.webp')">AGREGAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="category-title">COMBATE Y FITNESS</h3>
+    <div class="row mb-5">
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100 product-card text-center">
+                <div class="img-box"><img src="pictures/guantesbox.png"></div>
+                <div class="card-body d-flex flex-column">
+                    <p class="brand">EVERLAST</p>
+                    <p class="description">Guantes de boxeo 12oz</p>
+                    <p class="price">$980.00</p>
+                    <button class="btn btn-add-cart mt-auto" onclick="agregarCarrito('Guantes de boxeo 12oz' , 980.00,'pictures/guantesbox.png')">AGREGAR</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100 product-card text-center">
+                <div class="img-box"><img src="pictures/bokken.jpg"></div>
+                <div class="card-body d-flex flex-column">
+                    <p class="brand">MARTÍ</p>
+                    <p class="description">Sable de madera (Bokken)</p>
+                    <p class="price">$450.00</p>
+                    <button class="btn btn-add-cart mt-auto" onclick="agregarCarrito('Sable de madera (Bokken)' , 450.00,'pictures/bokken.jpg')">AGREGAR</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100 product-card text-center">
+                <div class="img-box"><img src="pictures/pesas.jpg"></div>
+                <div class="card-body d-flex flex-column">
+                    <p class="brand">SPORT</p>
+                    <p class="description">Mancuernas de acero 5kg</p>
+                    <p class="price">$849.00</p>
+                    <button class="btn btn-add-cart mt-auto" onclick="agregarCarrito('Mancuernas de acero 5kg' , 849.00,'pictures/pesas.jpg')">AGREGAR</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100 product-card text-center">
+                <div class="img-box"><img src="pictures/gimnasialistones.jpg"></div>
+                <div class="card-body d-flex flex-column">
+                    <p class="brand">ADIDAS</p>
+                    <p class="description">Cintas de gimnasia rítmica</p>
+                    <p class="price">$410.00</p>
+                    <button class="btn btn-add-cart mt-auto" onclick="agregarCarrito('Cintas de gimnasia rítmica' , 410.00,'pictures/gimnasialistones.jpg')">AGREGAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="category-title">AVENTURA</h3>
+    <div class="row mb-5">
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100 product-card text-center">
+                <div class="img-box"><img src="pictures/bicicleta de montaña.jpg"></div>
+                <div class="card-body d-flex flex-column">
+                    <p class="brand">TREK</p>
+                    <p class="description">Bicicleta de montaña R29</p>
+                    <p class="price">$12,500.00</p>
+                    <button class="btn btn-add-cart mt-auto" onclick="agregarCarrito('Bicicleta de montaña R29' , 12500.00,'pictures/bicicleta de montaña.jpg')">AGREGAR</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100 product-card text-center">
+                <div class="img-box"><img src="pictures/casacamping.jpg"></div>
+                <div class="card-body d-flex flex-column">
+                    <p class="brand">COLEMAN</p>
+                    <p class="description">Casa de campaña 4 personas</p>
+                    <p class="price">$2,100.00</p>
+                    <button class="btn btn-add-cart mt-auto" onclick="agregarCarrito('Casa de campaña 4 personas' , 2100.00,'pictures/casacamping.jpg')">AGREGAR</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100 product-card text-center">
+                <div class="img-box"><img src="pictures/mochila.jpg"></div>
+                <div class="card-body d-flex flex-column">
+                    <p class="brand">ROSSIGNOL</p>
+                    <p class="description">Mochila para senderismo </p>
+                    <p class="price">$3,500.00</p>
+                    <button class="btn btn-add-cart mt-auto" onclick="agregarCarrito('Mochila para senderismo ' , 3500.00,'pictures/mochila.jpg')">AGREGAR</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100 product-card text-center">
+                <div class="img-box"><img src="pictures/bastones senderismo.jpg"></div>
+                <div class="card-body d-flex flex-column">
+                    <p class="brand">FORCLAZ</p>
+                    <p class="description">Bastones de senderismo</p>
+                    <p class="price">$890.00</p>
+                    <button class="btn btn-add-cart mt-auto" onclick="agregarCarrito('Bastones de senderismo' , 890.00,'pictures/bastones senderismo.jpg')">AGREGAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="category-title">DEPORTES EXTREMOS</h3>
+    <div class="row mb-5">
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100 product-card text-center">
+                <div class="img-box"><img src="pictures/snowboard.webp"></div>
+                <div class="card-body d-flex flex-column">
+                    <p class="brand">BURTON</p>
+                    <p class="description">Tabla de snowboard</p>
+                    <p class="price">$2,800.00</p>
+                    <button class="btn btn-add-cart mt-auto" onclick="agregarCarrito('Tabla de snowboard' , 2800.00,'pictures/snowboard.webp')">AGREGAR</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100 product-card text-center">
+                <div class="img-box"><img src="pictures/ski.avif"></div>
+                <div class="card-body d-flex flex-column">
+                    <p class="brand">ROSSIGNOL</p>
+                    <p class="description">Equipo de esquí</p>
+                    <p class="price">$3,500.00</p>
+                    <button class="btn btn-add-cart mt-auto" onclick="agregarCarrito('Equipo de esquí' , 3500.00,'pictures/ski.avif')">AGREGAR</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100 product-card text-center">
+                <div class="img-box"><img src="pictures/kayak.jpg"></div>
+                <div class="card-body d-flex flex-column">
+                    <p class="brand">Aquatik</p>
+                    <p class="description">Kayak</p>
+                    <p class="price">$3,000.00</p>
+                    <button class="btn btn-add-cart mt-auto" onclick="agregarCarrito('Kayak' , 3000.00,'pictures/kayak.jpg')">AGREGAR</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100 product-card text-center">
+                <div class="img-box"><img src="pictures/aletas natacion.webp"></div>
+                <div class="card-body d-flex flex-column">
+                    <p class="brand">SPEEDO</p>
+                    <p class="description">Aletas de natación</p>
+                    <p class="price">$620.00</p>
+                    <button class="btn btn-add-cart mt-auto" onclick="agregarCarrito('Aletas de natación', 620.00,'pictures/aletas natacion.webp')">AGREGAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="deportes.js"></script>
+<script src="scripthome.js"></script>
+<script src="carrito.js"></script>
+</body>
+</html>

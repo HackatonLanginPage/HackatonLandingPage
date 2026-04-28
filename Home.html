@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link href="stylehome.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Tienda de Deportes</a>
+            
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Home.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Ropa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="calzado.html">Calzado</a></li>
+                    <li class="nav-item"><a class="nav-link" href="deportes.html">Deportes</a></li>
+                </ul>
+                <button class="btn btn-danger" onclick="irAlCarrito()">🛒</button>
+            </div>
+        </div>
+    </nav>
+    <section class="hero text-center text-black d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-4">Supera tus limites</h1>
+            <p>Todo para tu rendimiento deportivo</p>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <h2 class="text-center mb-4">Productos Destacados</h2>
+
+        <div id="carouselProductos" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+            <!-- SLIDE 1 -->
+            <div class="carousel-item active">
+                <div class="row">
+
+                <!-- PRODUCTO 1 -->
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="Imagenes_home/Tenis1.avif" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>Tenis Running</h5>
+                            <p>$1200</p>
+                            <button class="btn btn-dark" onclick="agregarCarrito('Tenis')">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 2 -->
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="Imagenes_home/Tenis2.avif" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>Tenis Nike</h5>
+                            <p>$1500</p>
+                            <button class="btn btn-dark" onclick="agregarCarrito('Tenis')">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 3 -->
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="Imagenes_home/Ropa_negra.avif" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>Playera Nike</h5>
+                            <p>$300</p>
+                            <button class="btn btn-dark" onclick="agregarCarrito('Playera')">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+
+            <!-- SLIDE 2 -->
+            <div class="carousel-item">
+                <div class="row">
+
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="Imagenes_home/Top_deportivo.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>Playera Mujer</h5>
+                            <p>$450</p>
+                            <button class="btn btn-dark" onclick="agregarCarrito('Top deportivo', 450, 'Imagenes_home/Top_deportivo.jpg')">
+                                Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="Imagenes_home/Carpa.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>Carpa de acampar</h5>
+                            <p>$1500</p>
+                            <button class="btn btn-dark" onclick="agregarCarrito('Carpa')">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="Imagenes_home/Balon_basket.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>Balon de Basketball</h5>
+                            <p>$200</p>
+                            <button class="btn btn-dark" onclick="agregarCarrito('Balon')">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+
+            </div>
+
+            <!-- BOTONES -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProductos" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center p-3">
+        <p>&copy; 2026 Tienda Deportiva</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="scripthome.js"></script>
+    <script src="carrito.js"></script>
+</body>
+</html>
