@@ -18,9 +18,14 @@ function mostrarCarrito() {
     item.classList.add("card", "p-3", "mb-3");
 
     item.innerHTML = `
-      <h5>${producto}</h5>
-      <p>Producto agregado</p>
-    `;
+    <div class="d-flex align-items-center gap-3">
+      <img src="${producto.imagen}" width="80">
+      <div>
+        <h5>${producto.nombre}</h5>
+        <p>$${producto.precio}</p>
+      </div>
+    </div>
+`;
 
     contenedor.appendChild(item);
   });
